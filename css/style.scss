@@ -1,0 +1,64 @@
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//utility classes
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  &__input {
+    width: 100%;
+    height: 80px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    text-align: right;
+    font-size: 30px;
+  }
+  &__keypad {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: large;
+  }
+  &__key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 70px;
+  }
+}
+.number {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: 1px solid white;
+  &:hover {
+    background-color: rgb(61, 61, 61);
+  }
+  &__zero {
+    flex-grow: 2;
+  }
+}
+.operator {
+  background-color: orange;
+  &:hover {
+    background-color: rgb(225, 147, 1);
+  }
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+}
