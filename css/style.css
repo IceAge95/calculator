@@ -17,6 +17,12 @@
   display: flex;
   flex-direction: column;
 }
+.card__title {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 0px;
+}
 .card__input {
   width: 100%;
   height: 80px;
